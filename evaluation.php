@@ -20,7 +20,7 @@ include('includes/topbar.php');
 					</fieldset>
 					<div class="clear-fix mt-2"></div>
 					<?php 
-					$qry = mysqli_query($conn, "SELECT criteria.criteria, question_list.questions
+					$qry = mysqli_query($conn, "SELECT criteria.criteria, question_list.questions, question_list.id
 					FROM criteria
 					INNER JOIN question_list
 					WHERE criteria.id = question_list.criteria_id");
